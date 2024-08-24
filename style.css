@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    transition: 1s;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container {
+    width: 550px;
+    height: 450px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.header h2 {
+    font-weight: 400;
+    color: #fff;
+}
+.block {
+    width: 45vw;
+    height: auto;
+    padding: 20px 30px;
+    background-color: bisque;
+    border-radius: 15px;
+    box-shadow: 0 25px 31px rgba(0,0,0,0.5);
+    backface-visibility: hidden;
+    transition: all 0.4s ease-in;
+    position: absolute;
+}
+hr {
+    margin-top: 10px;
+    height: 10px;
+    background-color: #262626;
+}
+.text-area {
+    text-align: center;
+    font-size: 25px;
+    color: #262626;
+    line-height: 1.5;
+}
+.main-content .writer {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    column-rule: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: "Merriweather", serif;
+}
+.writer1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    column-rule: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: "Merriweather", serif;  
+}
+.main-content .button-area{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.button-area .btn button {
+   background-color: #262626;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   padding: 12px 15px;
+
+}
+.button-area .btn button:hover {
+    background-color: tomato;
+    transition: 0.01s ease;
+}
+.button-area .btn button:active {
+    background-color: deepskyblue;
+}
+.backside {
+    transform: rotateY(180deg); 
+}
+.rotateF{ 
+    transform: rotateY(-180deg); 
+} 
+.rotateB{ 
+    transform: rotateY(0deg); 
+} 
